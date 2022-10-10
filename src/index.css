@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/*
+- Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%) / #003A70
+- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%) / #202C37
+- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%) / #111517
+- Dark Gray (Light Mode Input): hsl(0, 0%, 52%) / #858585
+- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%) / #FAFAFA
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%) / #FFFFFF
+*/
+
+:root{
+    --fs-sm: 14px;
+    --fs-md: 16px;
+
+}
+
+
+:root[data-theme="light"] {
+    --background-main: #FAFAFA;
+    --background-header: #3398d9;
+    --background-ui: #FFFFFF;
+    --primaty-text: #111517;
+    --advance-text: #FAFAFA;
+    --shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+}
+
+:root[data-theme="dark"] {
+    --background-main: #2B2B2B;
+    --background-header: url('./design/Star.png');
+    --background-ui: #333232;
+    --primaty-text: #FFFFFF;
+    --advance-text: #FAFAFA;
+    --shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+}
+
+body {
+    background: var(--background-main);
+}
+
+
+
+

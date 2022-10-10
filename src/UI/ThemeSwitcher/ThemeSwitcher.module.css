@@ -1,0 +1,44 @@
+.wrapper {
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+
+.input {
+    display: none;
+}
+
+.icon {
+
+}
+
+.text {
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+}
+
+input:checked ~ .icon{
+    color: #e7d142;
+}
+
+input:checked ~ .text{
+    color: #FFF;
+}
+
+
+/*---------------------------------------------------*/
+
